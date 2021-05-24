@@ -8,7 +8,7 @@ Every child inherits one copy of the GJB2 gene from each of their parents. If a 
 
 We can attempt to model all of these relationships by forming a Bayesian Network of all the relevant variables, as in the one below, which considers a family of two parents and a single child.
 
-[Bayesian Network for GJB2](https://github.com/AbdulMutakabbir/GJB2-Gene-Heredity/blob/main/assets/gene_network.png)
+![Bayesian Network for GJB2](https://github.com/AbdulMutakabbir/GJB2-Gene-Heredity/blob/main/assets/gene_network.png)
 
 Each person in the family has a Gene random variable representing how many copies of a particular gene a person has: a value that is 0, 1, or 2. Each person in the family also has a Trait random variable, which is yes or no depending on whether that person expresses a trait ie hearing imparement based on that gene. There’s an arrow from each person’s Gene variable to their Trait variable to encode the idea that a person’s genes affect the probability that they have a particular trait. Meanwhile, there’s also an arrow from both the mother and father’s Gene random variable to their child’s Gene random variable: the child’s genes are dependent on the genes of their parents.
 
