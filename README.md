@@ -49,5 +49,50 @@ Lily:
     False: 1.0000
 ```
 
+``` python
+$ python heredity.py data/family2.csv
+Arthur:
+  Gene:
+    2: 0.0147
+    1: 0.0344
+    0: 0.9509
+  Trait:
+    True: 0.0000
+    False: 1.0000
+Hermione:
+  Gene:
+    2: 0.0608
+    1: 0.1203
+    0: 0.8189
+  Trait:
+    True: 0.0000
+    False: 1.0000
+Molly:
+  Gene:
+    2: 0.0404
+    1: 0.0744
+    0: 0.8852
+  Trait:
+    True: 0.0768
+    False: 0.9232
+Ron:
+  Gene:
+    2: 0.0043
+    1: 0.2149
+    0: 0.7808
+  Trait:
+    True: 0.0000
+    False: 1.0000
+Rose:
+  Gene:
+    2: 0.0088
+    1: 0.7022
+    0: 0.2890
+  Trait:
+    True: 1.0000
+    False: 0.0000
+
+```
+
 # Technologies
 * Python
