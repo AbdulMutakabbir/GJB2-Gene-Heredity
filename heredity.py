@@ -97,8 +97,8 @@ def main():
 def load_data(filename):
     """
     Load gene and trait data from a file into a dictionary.
-    File assumed to be a CSV containing fields name, mother, father, trait.
-    mother, father must both be blank, or both be valid names in the CSV.
+    Assume to be a CSV containing fields name, mother, father, trait.
+    Mother, Father must both be blank, or both be valid names in the CSV.
     trait should be 0 or 1 if trait is known, blank otherwise.
     """
     data = dict()
@@ -196,7 +196,6 @@ def joint_probability(people, one_gene, two_genes, have_trait):
 
 def update(probabilities, one_gene, two_genes, have_trait, p):
     """
-    Add to `probabilities` a new joint probability `p`.
     Each person should have their "gene" and "trait" distributions updated.
     Which value for each distribution is updated depends on whether
     the person is in `have_gene` and `have_trait`, respectively.
@@ -219,7 +218,7 @@ def update(probabilities, one_gene, two_genes, have_trait, p):
 def normalize(probabilities):
     """
     Update `probabilities` such that each probability distribution
-    is normalized (i.e., sums to 1, with relative proportions the same).
+    is normalized.
     """
     # loop over people in probabilities dictionary
     for person in probabilities:
